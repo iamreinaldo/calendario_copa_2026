@@ -1,0 +1,9 @@
+psycopg2-binary
+alembic
+SQLAlchemy
+python-dotenv
+uvicorn
+fastapi
+ics
+tatsu<5.0
+python-multipart
