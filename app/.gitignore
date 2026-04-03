@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ambiente virtual
+venv/
+.env
+
+# dotenv
+.env.*
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Mac
+.DS_Store
+
+# SQLite (se usar)
+*.db
+
+# Alembic
+alembic/versions/__pycache__/

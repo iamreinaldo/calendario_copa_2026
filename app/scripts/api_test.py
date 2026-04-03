@@ -1,12 +1,10 @@
 import requests
-import os
-from dotenv import load_dotenv
 from app.services.sync import normalizar_data_api
+from app.core.settings import settings
 
 
-load_dotenv()
 
-API_KEY = os.getenv("API_KEY_FOOTBALL")
+API_KEY = settings.API_KEY_FOOTBALL
 
 url = "https://api.football-data.org/v4/competitions/WC/matches"
 

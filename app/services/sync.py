@@ -1,9 +1,8 @@
-import os
 import requests
 from datetime import datetime, timezone, timedelta
 from sqlalchemy.orm import Session
-from dotenv import load_dotenv
 from app.models import Match
+from app.core.settings import settings
 
 
 def normalizar_data_api(utc_date: str):
@@ -18,7 +17,8 @@ def normalizar_data_api(utc_date: str):
 
 
 
-API_KEY = os.getenv("API_KEY_FOOTBALL")
+
+API_KEY = settings.API_KEY_FOOTBALL
 URL = "https://api.football-data.org/v4/competitions/WC/matches"
 
 headers = {
