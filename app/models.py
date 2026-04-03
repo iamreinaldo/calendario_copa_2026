@@ -6,6 +6,7 @@ class Match(Base):
     __tablename__ = "matches"
 
     id = Column(Integer, primary_key=True, index=True)
+    external_id = Column(Integer, nullable=True, index=True)
 
     # dados principais
     start_time = Column(DateTime, nullable=False)

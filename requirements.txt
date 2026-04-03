@@ -7,3 +7,4 @@ fastapi
 ics
 tatsu<5.0
 python-multipart
+apscheduler
